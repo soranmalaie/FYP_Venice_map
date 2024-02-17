@@ -90,58 +90,11 @@
     // welcoming message
     var greeting = {
         type: jsPsychHtmlKeyboardResponse,
-        stimulus: "Welcome to the experiment! <b>We no longer collect data.</b> This is solely for manifestation purposes," +
+        stimulus: "Welcome to the experiment! <b>We no longer collect data.</b> This is solely for demonstration purposes," +
             " allowing those interested to observe what the experiment looked like and understand the tasks and procedures involved.<p>"+
             "The experiment was between-subject. At any point, refresh the page to be assigned to the other condition.",
     };
     timeline.push(greeting);
-
-    var consent_form = {
-        type: jsPsychInstructions,
-        pages: [
-
-            '<p style="font-size:24px;font-weight:bold;">CONSENT TO PARTICIPATE IN A RESEARCH STUDY<p> ' +
-            '<p style="class=positivefeedback; text-align:left; font-size:18px">' +
-            '<b>Study Title: Reasoning and Learning</b><p>' +
-            '<p style="text-align:left"><b>Investigator Name, Department, Telephone Number:</b>' +
-            '<p style="text-align:left">Prof. Tyler Marghetis, Cognitive and Information Sciences, 619-252-7798<p>' +
-            '<p style="text-align:left"><b>PURPOSE</b>' +
-            '<p style="text-align:left">You are being asked to participate in a research study conducted by Prof. Tyler Marghetis' +
-            ' at the University of California, Merced.  We hope to learn about how people reason about abstract concepts and complex topics.' +
-            '<p style="text-align:left"><b>PROCEDURES</b><p>' +
-            '<p style="text-align:left">If you choose to be in the study, you will be asked to answer questions, solve puzzles, and/or describe your reasoning.' +
-            ' You will respond by writing, speaking, typing, and/or clicking on a computer screen. We may record your responses, ' +
-            'including all interactions with the computer. These tasks allow us to better understand how people learn and reason.' +
-            ' This should take between 5 minutes and one hour. The study will be completed either in-person or online on your computer.' +
-            ' You can stop the study at any time. Approximately 5,000 people will participate in this study.' +
-            '<p style="text-align:left"><b>ALTERNATIVES </b>' +
-            '<p style="text-align:left">If you are receiving extra credit in connection with or as part of a course, your instructor must offer you other options for obtaining credit, if you decline to participate.' +
-            '<p style="text-align:left"><b>RISKS</b>' +
-            '<p style="text-align:left">Participants should generally not experience any risks beyond those of daily living and computer use. One potential risk is frustration when trying to solve more difficult reasoning problems.' +
-            '<p style="text-align:left"><b>BENEFITS</b>' +
-            '<p style="text-align:left">It is possible that you will not benefit directly by participating in this study. ' +
-            '<p style="text-align:left"><b>CONFIDENTIALITY</b>' +
-            '<p style="text-align:left">Absolute confidentiality cannot be guaranteed, since research documents are not protected from subpoena. We will not ask for any identifiable information.' +
-            ' The data collected in this study could be used for future research studies or distributed to other investigators for future research studies without additional informed consent from the subject or legally authorized representative.' +
-            ' The information collected during this study may be presented at conferences, published in scientific journals, and shared with other researchers.' +
-            ' Identifiable information will be removed before the data is shared. Individual privacy will be maintained and identities will not be disclosed.' +
-            '<p style="text-align:left"><b>COSTS/COMPENSATION</b>' +
-            '<p style="text-align:left">If you are volunteering, you will receive a small token gift as a sign of our appreciation. If you are participating in return for payment, you will be compensated approximately $8/hour for participating in this study.' +
-            ' If you are participating in return for course credit, you will be compensated through the SONA system with course credit (0.5 credit per half-hour), even if you do not complete the study. There is no cost to you beyond the time and effort required to complete the procedure(s) described above.' +
-            '<p style="text-align:left"><b>RIGHT TO REFUSE OR WITHDRAW</b>' +
-            '<p style="text-align:left">Participation is completely voluntary.  You may refuse to participate in this study.  You may change your mind about being in the study and quit after the study has started.' +
-            '<p style="text-align:left"><b>QUESTIONS</b>' +
-            '<p style="text-align:left">If you have any questions about this research project please contact Prof. Tyler Marghetis, who will answer them at 619-252-7798 or tmarghetis@ucmerced.edu' +
-            'For questions about your rights while taking part in this study call the Office of Research at (209) 228-4613 or write to the Office of Research,5200 North Lake Rd, UC Merced, Merced, CA 95343.' +
-            ' The Office of Research will inform the Institutional Review Board which is a group of people who review the research to protect your rights.  If you have any complaints or concerns about this study, you may address them to Rose Scott, Chair of the IRB at (209) 228-4362, irbchair@ucmerced.edu.' +
-            '<p style="text-align:left"><b>CONSENT</b>' +
-            '<p style="text-align:left"><b>By choosing to continue to the next screen, you indicate that you have decided to participate as a research subject and that you have read and understood the information provided above. You may save a copy of this form to keep for your records. </b><p>'
-        ],
-        show_clickable_nav: true,
-        button_label_next: 'Agree & Continue'
-    };
-    timeline.push(consent_form)
-
 
     var let_set = [
         "<b>ab</b>",
